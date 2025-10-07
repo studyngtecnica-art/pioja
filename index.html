@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Galería Musical Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section id="pantalla-inicio" class="pantalla activa">
+        <h1>Bienvenido a la Galería Musical</h1>
+        <p>Explora las canciones y fotos</p>
+        <button id="btn-comenzar">COMENZAR</button>
+    </section>
+
+    <section id="pantalla-seleccionar" class="pantalla oculta">
+        <h2>Elige una canción:</h2>
+        <div id="opciones-canciones">
+            </div>
+        <button class="btn-volver-inicio">Volver a Inicio</button>
+    </section>
+
+    <section id="pantalla-detalle" class="pantalla oculta">
+        <h2 id="titulo-cancion"></h2>
+        <div class="contenido-detalle">
+            <img id="foto-cancion" src="" alt="Foto de la canción">
+            <pre id="letra-cancion"></pre>
+        </div>
+        <audio id="audio-cancion" controls></audio>
+        
+        <div class="botones-detalle">
+            <button id="btn-siguiente-cancion" class="oculto">Siguiente Canción</button>
+            <button id="btn-volver-selector">Volver a Seleccionar</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
